@@ -1,0 +1,21 @@
+<button class="btn btn-success mt-2 mb-2" (click)=dashpage()>DashBoard</button> 
+<button class="btn btn-light mt-2 mb-2" style="margin-left: 1200px;" (click)=logout()>logout</button> 
+                    <div class="responsiveTable">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>type</th>
+                                    <th>date</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let bonus of array" align="left">
+                                        <td>{{bonus.id}}</td>
+                                        <td>{{bonus.type}}</td>
+                                        <td>{{bonus.date}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div><br>
